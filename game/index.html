@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Port Velo — Neon Tide</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0a1018; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; font-family: sans-serif; }
+  #wrap { position: relative; }
+  canvas { display: block; width: 1280px; height: 720px; max-width: 100vw; max-height: 100vh; background: #7a8f5a; }
+  #status { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <p id="status" aria-live="polite">Port Velo — Neon Tide. Press Enter or click to start.</p>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
